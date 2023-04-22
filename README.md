@@ -11,7 +11,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
 - Various Command-Line Tools
-- Various Network Protocols (SSH, RDH, DNS, HTTP/S, ICMP)
+- Various Network Protocols (SSH, DNS, RDP, ICMP)
 - Wireshark (Protocol Analyzer)
 
 <h2>Operating Systems Used </h2>
@@ -23,7 +23,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 - Download Wireshark to VM1 from Google
 - Observe Network Traffic
-- Filter Network Traffic (ICMP, SSH)
+- Filter Network Traffic (ICMP, SSH, DHCP)
 - Change Firewall on VM2 to block traffic and view through Wireshark
 - s5
 - s6
@@ -85,30 +85,14 @@ Test connectivity between VM1 and VM2 by using ping command in powershell. Filte
 <img src="https://i.imgur.com/vz2NwDg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Next filter Wireshark traffic by SSH. Connect to VM2 through Powershell in VM1(note when typing password for VM2 it will not show in powershell) and view traffic on Wireshark.
+Next filter Wireshark traffic by SSH(Secure Shell). Connect to VM2 through Powershell in VM1(note when typing password for VM2 it will not show in powershell) and view traffic on Wireshark. Exit SSH connection. 
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/N1Dxz2Q.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Next filter traffic for DNS(Domain Name Server). Use (nslookup www.google.com) and observe the traffic. For fun you can also filter Wireshark by RDP and watch wireshark spam traffic as there is an active remote session happening.
 </p>
 <br />

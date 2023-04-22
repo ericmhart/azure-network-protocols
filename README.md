@@ -25,8 +25,6 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Observe Network Traffic
 - Filter Network Traffic (ICMP, SSH, DHCP)
 - Change Firewall on VM2 to block traffic and view through Wireshark
-- s5
-- s6
 
 <h2>Actions and Observations</h2>
 

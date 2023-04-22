@@ -82,10 +82,10 @@ Test connectivity between VM1 and VM2 by using ping command in powershell. Filte
 
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/vz2NwDg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Next filter Wireshark traffic by SSH. Connect to VM2 through Powershell in VM1(note when typing password for VM2 it will not show in powershell) and view traffic on Wireshark.
 </p>
 <br />
 
